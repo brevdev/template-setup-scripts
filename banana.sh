@@ -1,3 +1,5 @@
+#!/bin/bash
+
 conda init zsh
 conda init bash 
 eval "$(conda shell.bash hook)"
