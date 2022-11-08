@@ -13,5 +13,6 @@ pip install ./sample-generator
 pip install ./v-diffusion-pytorch
 pip install ipywidgets==7.7.1 gradio
 pip install k-diffusion
+source ~/.bashrc
 code --install-extension ms-toolsai.jupyter
 code --install-extension ms-python.python
