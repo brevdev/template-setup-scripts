@@ -1,6 +1,3 @@
-##### Node v14.x + npm #####
-
-
 #!/bin/bash
 
 set -eo pipefail
