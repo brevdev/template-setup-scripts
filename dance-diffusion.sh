@@ -13,7 +13,3 @@ pip install ./sample-generator
 pip install ./v-diffusion-pytorch
 pip install ipywidgets==7.7.1 gradio
 pip install k-diffusion
-source ~/.bashrc
-FOLDER=`ls /home/ubuntu/.vscode-server/bin/ | tail -1`
-/home/ubuntu/.vscode-server/bin/$FOLDER/bin/remote-cli/code --install-extension ms-toolsai.jupyter
-/home/ubuntu/.vscode-server/bin/$FOLDER/bin/remote-cli/code --install-extension ms-python.python
