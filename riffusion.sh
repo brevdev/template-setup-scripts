@@ -18,3 +18,8 @@ sudo apt install ffmpeg -y
 
 cd ~/riffusion-app 
 npm install
+
+
+echo "
+RIFFUSION_FLASK_URL=http://localhost:3013/run_inference/
+NEXT_PUBLIC_RIFFUSION_USE_BASETEN=false" > .env.local
