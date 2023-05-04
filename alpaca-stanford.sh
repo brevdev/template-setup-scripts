@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -eo pipefail
-
+source /etc/bash.bashrc
 conda init zsh
 conda init bash 
 eval "$(conda shell.bash hook)"
