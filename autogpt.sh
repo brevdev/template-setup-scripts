@@ -15,4 +15,4 @@ eval "$(conda shell.bash hook)"
 conda activate python310
 pip install -r requirements.txt
 
-cp .env.template .env
+cp ../Auto-GPT/.env.template ../Auto-GPT/.env
