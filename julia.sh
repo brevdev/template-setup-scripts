@@ -14,4 +14,4 @@ set -eo pipefail
 (echo ""; echo "##### JuliaUp #####"; echo "";)
 curl -fsSL https://install.julialang.org | sh -s -- -y
 
-cd template-setup-scripts && julia setup.jl && cd ..
+julia setup.jl
