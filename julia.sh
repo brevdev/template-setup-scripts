@@ -10,8 +10,7 @@ set -eo pipefail
 ##### this file happens at this level.                                         #####
 ####################################################################################
 
-#### Juliaup #####
+##### Juliaup #####
 (echo ""; echo "##### JuliaUp #####"; echo "";)
-curl -fsSL https://install.julialang.org | sh -s -- -y
-
-julia setup.jl
+curl -fsSL https://install.julialang.org | sh -s -- -y 
+/home/ubuntu/.juliaup/bin/julia julia.jl
