@@ -22,17 +22,17 @@ sudo apt-get install build-essential python3-venv -y
 npm i 
 node setup.js
   
-npx dalai llama install 7B
+# npx dalai llama install 7B
 
 # Move models to other repo be converted 
-mv ~/dalai/llama/models/* ~/llama.cpp/models/
+# mv ~/dalai/llama/models/* ~/llama.cpp/models/
 
 # install Python dependencies
-cd ~/llama.cpp
-python3 -m pip install -r requirements.txt
+# cd ~/llama.cpp
+# python3 -m pip install -r requirements.txt
 
 # convert the 7B model to ggml FP16 format
-python3 convert.py models/7B/
+# python3 convert.py models/7B/
 
 #make
 
