@@ -7,7 +7,8 @@ echo "conda activate py310" >> ~/.zshrc
 source ~/.bashrc
 source ~/.zshrc
 conda activate py310
-pip install xformers
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
+pip install --force-reinstall --no-deps --pre xformers
 # sudo apt install wget git python3 python3-venv -y
 # cd /home/ubuntu/stable-diffusion-webui
 # ./webui.sh
