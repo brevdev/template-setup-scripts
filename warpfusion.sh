@@ -8,6 +8,7 @@ conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit
 python -m ipykernel install --user
 pip install timm==0.4.12
 pip install lpips==0.1.3
+pip install jupyterlab
 sudo tee /etc/systemd/system/brev-jupyter.service > /dev/null << EOF
 	[Unit]
 	Description=Jupyter Lab
@@ -15,7 +16,7 @@ sudo tee /etc/systemd/system/brev-jupyter.service > /dev/null << EOF
 	[Service]
 	Type=simple
 	PIDFile=/run/jupyter-lab.pid
-	ExecStart=/home/ubuntu/.local/bin/jupyter lab --no-browser --port=8321 --ip=0.0.0.0 --NotebookApp.token='' --NotebookApp.password=''
+	ExecStart=/home/ubuntu/.conda/envs/jupyter/bin/jupyter lab --no-browser --port=8321 --ip=0.0.0.0 --NotebookApp.token='' --NotebookApp.password=''
 	User=ubuntu
 	WorkingDirectory=/home/ubuntu
 	Restart=always
