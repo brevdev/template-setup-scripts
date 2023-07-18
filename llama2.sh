@@ -15,5 +15,6 @@ fi
 
 conda activate python310
 
+cd /home/ubuntu/llama
 chmod +x ./download.sh
 pip install -e .
