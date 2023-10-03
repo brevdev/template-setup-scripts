@@ -13,4 +13,4 @@ set -eo pipefail
 ##### Juliaup #####
 (echo ""; echo "##### JuliaUp #####"; echo "";)
 curl -fsSL https://install.julialang.org | sh -s -- -y 
-/home/ubuntu/.juliaup/bin/julia julia.jl
+/home/ubuntu/.juliaup/bin/julia julia/julia.jl
